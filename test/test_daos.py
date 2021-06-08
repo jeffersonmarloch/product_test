@@ -22,4 +22,4 @@ class TestDaos(unittest.TestCase):
     def test_create_product():
         productdao = ProdutoDAO("product.txt")
         product = Product("Pneu", 900, "blablala", "Acessório")
-        productdao.insert(productdao.__str__())
+        productdao.insert(product.__str__())
